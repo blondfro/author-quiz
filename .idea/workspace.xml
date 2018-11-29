@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8ac9cc3d-17cd-48fb-b204-dc88ef259bb7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AuthorQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthorQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AuthorQuiz.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/AuthorQuiz.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,11 +19,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="AuthorQuiz.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="39" column="41" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+            <state relative-caret-position="270">
+              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -30,13 +43,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorQuiz.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.js">
+      <file leaf-file-name="AuthorQuiz.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+            <state relative-caret-position="445">
+              <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/App.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="918">
-              <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+              <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -60,10 +73,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/AuthorQuiz.test.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/AuthorQuiz.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/AuthorQuiz.test.js" />
       </list>
     </option>
   </component>
@@ -166,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543365695542</updated>
-      <workItem from="1543365697678" duration="12106000" />
+      <workItem from="1543365697678" duration="14638000" />
     </task>
     <task id="LOCAL-00001" summary="Added in bootstrap css and changed the app name to AuthorQuiz and refarcotred accordingly.">
       <created>1543369483480</created>
@@ -189,11 +202,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543456735479</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added in a highlight item to the state const, an answer selected func to check if the selected answer is correct, and created a render func to handle rendering to the DOM.  Also passed in a more values to the author-quiz js file. &#10;&#10;imported prop-types, created an onClick component event, a highlighting func to change based on correctness of answer, and added in proptype validation to the turn component.">
+      <created>1543527020679</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543527020679</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12106000" />
+    <option name="totallyTimeSpent" value="14638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1034" extended-state="6" />
@@ -230,7 +250,8 @@
     <MESSAGE value="Added in bootstrap css and changed the app name to AuthorQuiz and refarcotred accordingly." />
     <MESSAGE value="added in a describe container for the app's test file." />
     <MESSAGE value="added in author images. &#10;added in new styling to the app.css file. &#10;&#10;used npm to install the underscore library to gain access to the shuffle and sample methods. &#10;&#10;created basic functionality to display a random author's image and a collection of books." />
-    <option name="LAST_COMMIT_MESSAGE" value="added in author images. &#10;added in new styling to the app.css file. &#10;&#10;used npm to install the underscore library to gain access to the shuffle and sample methods. &#10;&#10;created basic functionality to display a random author's image and a collection of books." />
+    <MESSAGE value="added in a highlight item to the state const, an answer selected func to check if the selected answer is correct, and created a render func to handle rendering to the DOM.  Also passed in a more values to the author-quiz js file. &#10;&#10;imported prop-types, created an onClick component event, a highlighting func to change based on correctness of answer, and added in proptype validation to the turn component." />
+    <option name="LAST_COMMIT_MESSAGE" value="added in a highlight item to the state const, an answer selected func to check if the selected answer is correct, and created a render func to handle rendering to the DOM.  Also passed in a more values to the author-quiz js file. &#10;&#10;imported prop-types, created an onClick component event, a highlighting func to change based on correctness of answer, and added in proptype validation to the turn component." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -238,42 +259,45 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="918">
-          <caret line="34" column="19" lean-forward="true" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+          <caret line="34" column="19" selection-start-line="34" selection-start-column="19" selection-end-line="34" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="85" column="9" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        <state relative-caret-position="270">
+          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.js">
+    <entry file="file://$PROJECT_DIR$/src/AuthorQuiz.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="56" column="47" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
+        <state relative-caret-position="445">
+          <caret line="71" column="12" selection-start-line="71" selection-start-column="12" selection-end-line="71" selection-end-column="12" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
