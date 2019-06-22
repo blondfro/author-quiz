@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
-import logo from './logo.svg';
+import {connect} from 'react-redux';
+// import logo from './logo.svg';
 import './App.css';
 import './bootstrap.min.css';
+
 
 function Hero() {
     return(
@@ -47,6 +49,7 @@ function Turn({author, books, highlight, onAnswerSelected}) {
             </div>
         </div>)
 }
+
 Turn.propTypes = {
   author: PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -85,17 +88,44 @@ function Footer() {
         </div>)
 }
 
+/*
+create mapStateToProps and mapDispatchToProps functions. for implementing a redux store.
+*/
 
-function AuthorQuiz({turnData, highlight, onAnswerSelected, onContinue}) {
-    return (
-      <div className="container-fluid">
-          <Hero />
-          <Turn {...turnData} highlight={highlight} onAnswerSelected={onAnswerSelected}/>
-          <Continue show={highlight === 'correct'} onContinue={onContinue}/>
-          <button><Link to="/add">Add an Author</Link></button>
-          <Footer />
-      </div>
-    );
+// this function will pass the needed state.
+
+function mapStateToProps(state) {
+    return {
+        turnData: state.turnData,
+        highlight: state.highlight
+    };
 }
+
+// this function will pass the needed events or actions.
+function mapDispatchToProps(dispatch) {
+    return {
+        onAnswerSelected: (answer) => {
+            dispatch({ type: 'ANSWER_SELECTED', answer });
+        },
+        onContinue: () => {
+            dispatch({ type: 'CONTINUE' });
+        }
+    };
+}
+
+
+const AuthorQuiz = connect(mapStateToProps, mapDispatchToProps)(
+    function ({turnData, highlight, onAnswerSelected, onContinue}) {
+        return (
+          <div className="container-fluid">
+              <Hero />
+              <Turn {...turnData} highlight={highlight}
+                    onAnswerSelected={onAnswerSelected}/>
+              <Continue show={highlight === 'correct'} onContinue={onContinue}/>
+              <button><Link to="/add">Add an Author</Link></button>
+              <Footer />
+          </div>
+        );
+});
 
 export default AuthorQuiz;
